@@ -10,7 +10,8 @@
     <!-- targets -->
     <target name="compile" description="compile project">
         <mkdir dir="${classes.dir}"/>
-        <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="false"/>
+       <!-- <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="false"/> -->
+	    <javac srcdir="${src.dir}" destdir="${classes.dir}" />
     </target>
 
     <target name="jar" depends="compile" description="generate the distribution jar">
